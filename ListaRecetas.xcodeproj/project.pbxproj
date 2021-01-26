@@ -14,6 +14,12 @@
 		A25EEF9725C08D20004A5769 /* ListaRecetas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A25EEF9525C08D20004A5769 /* ListaRecetas.xcdatamodeld */; };
 		A25EEF9925C08D24004A5769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A25EEF9825C08D24004A5769 /* Assets.xcassets */; };
 		A25EEF9C25C08D24004A5769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25EEF9A25C08D24004A5769 /* LaunchScreen.storyboard */; };
+		A25EEFA625C08DFE004A5769 /* RecetaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25EEFA525C08DFE004A5769 /* RecetaModel.swift */; };
+		A25EEFA825C08E4B004A5769 /* AddRecetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25EEFA725C08E4B004A5769 /* AddRecetaViewController.swift */; };
+		A25EEFAA25C09549004A5769 /* VerRecetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25EEFA925C09549004A5769 /* VerRecetaViewController.swift */; };
+		A25EEFAC25C09679004A5769 /* AddIngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25EEFAB25C09679004A5769 /* AddIngredientesViewController.swift */; };
+		A25EEFAE25C0BD8D004A5769 /* RecetaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25EEFAD25C0BD8D004A5769 /* RecetaTableViewCell.swift */; };
+		A25EEFB025C0CA93004A5769 /* IngredienteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25EEFAF25C0CA93004A5769 /* IngredienteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		A25EEF9825C08D24004A5769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A25EEF9B25C08D24004A5769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A25EEF9D25C08D24004A5769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25EEFA525C08DFE004A5769 /* RecetaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaModel.swift; sourceTree = "<group>"; };
+		A25EEFA725C08E4B004A5769 /* AddRecetaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecetaViewController.swift; sourceTree = "<group>"; };
+		A25EEFA925C09549004A5769 /* VerRecetaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerRecetaViewController.swift; sourceTree = "<group>"; };
+		A25EEFAB25C09679004A5769 /* AddIngredientesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientesViewController.swift; sourceTree = "<group>"; };
+		A25EEFAD25C0BD8D004A5769 /* RecetaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaTableViewCell.swift; sourceTree = "<group>"; };
+		A25EEFAF25C0CA93004A5769 /* IngredienteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredienteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +70,10 @@
 		A25EEF8B25C08D20004A5769 /* ListaRecetas */ = {
 			isa = PBXGroup;
 			children = (
+				A25EEFA425C08D98004A5769 /* Controladores */,
+				A25EEFA325C08D7D004A5769 /* Modelos */,
 				A25EEF8C25C08D20004A5769 /* AppDelegate.swift */,
 				A25EEF8E25C08D20004A5769 /* SceneDelegate.swift */,
-				A25EEF9025C08D20004A5769 /* ViewController.swift */,
 				A25EEF9225C08D20004A5769 /* Main.storyboard */,
 				A25EEF9825C08D24004A5769 /* Assets.xcassets */,
 				A25EEF9A25C08D24004A5769 /* LaunchScreen.storyboard */,
@@ -68,6 +81,27 @@
 				A25EEF9525C08D20004A5769 /* ListaRecetas.xcdatamodeld */,
 			);
 			path = ListaRecetas;
+			sourceTree = "<group>";
+		};
+		A25EEFA325C08D7D004A5769 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				A25EEFA525C08DFE004A5769 /* RecetaModel.swift */,
+				A25EEFAD25C0BD8D004A5769 /* RecetaTableViewCell.swift */,
+				A25EEFAF25C0CA93004A5769 /* IngredienteTableViewCell.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		A25EEFA425C08D98004A5769 /* Controladores */ = {
+			isa = PBXGroup;
+			children = (
+				A25EEF9025C08D20004A5769 /* ViewController.swift */,
+				A25EEFA725C08E4B004A5769 /* AddRecetaViewController.swift */,
+				A25EEFA925C09549004A5769 /* VerRecetaViewController.swift */,
+				A25EEFAB25C09679004A5769 /* AddIngredientesViewController.swift */,
+			);
+			name = Controladores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25EEFB025C0CA93004A5769 /* IngredienteTableViewCell.swift in Sources */,
 				A25EEF9125C08D20004A5769 /* ViewController.swift in Sources */,
 				A25EEF9725C08D20004A5769 /* ListaRecetas.xcdatamodeld in Sources */,
+				A25EEFA825C08E4B004A5769 /* AddRecetaViewController.swift in Sources */,
+				A25EEFA625C08DFE004A5769 /* RecetaModel.swift in Sources */,
+				A25EEFAA25C09549004A5769 /* VerRecetaViewController.swift in Sources */,
 				A25EEF8D25C08D20004A5769 /* AppDelegate.swift in Sources */,
+				A25EEFAE25C0BD8D004A5769 /* RecetaTableViewCell.swift in Sources */,
 				A25EEF8F25C08D20004A5769 /* SceneDelegate.swift in Sources */,
+				A25EEFAC25C09679004A5769 /* AddIngredientesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
